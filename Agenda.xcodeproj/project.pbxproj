@@ -28,6 +28,8 @@
 		D1A62EA8260961BF00F317AE /* AlunoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A62EA7260961BF00F317AE /* AlunoAPI.swift */; };
 		D1A62EAA260969D900F317AE /* AlunoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A62EA9260969D900F317AE /* AlunoDAO.swift */; };
 		D1A62EAC26096B5500F317AE /* Repositorio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A62EAB26096B5500F317AE /* Repositorio.swift */; };
+		D1CD6E9F2610CAB2001CC139 /* Configuracao.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CD6E9E2610CAB2001CC139 /* Configuracao.swift */; };
+		D1CD6EA12610D180001CC139 /* AlunoUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CD6EA02610D180001CC139 /* AlunoUserDefaults.swift */; };
 		E5F234651724D04E4A6FAA53 /* Pods_Agenda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FDE3C49C56B3CEC9B14B6A /* Pods_Agenda.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,8 @@
 		D1A62EA7260961BF00F317AE /* AlunoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlunoAPI.swift; sourceTree = "<group>"; };
 		D1A62EA9260969D900F317AE /* AlunoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlunoDAO.swift; sourceTree = "<group>"; };
 		D1A62EAB26096B5500F317AE /* Repositorio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositorio.swift; sourceTree = "<group>"; };
+		D1CD6E9E2610CAB2001CC139 /* Configuracao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuracao.swift; sourceTree = "<group>"; };
+		D1CD6EA02610D180001CC139 /* AlunoUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlunoUserDefaults.swift; sourceTree = "<group>"; };
 		FBBAEAF424741A1C3F5DB631 /* Pods-Agenda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agenda.release.xcconfig"; path = "Target Support Files/Pods-Agenda/Pods-Agenda.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,6 +197,7 @@
 				B9EA19FA1FDEBEAD00403CE0 /* Localizacao.swift */,
 				B9D565A61FE14ECA00BDA536 /* Notificacoes.swift */,
 				658B1AA72006456B006D944C /* AutenticacaoLocal.swift */,
+				D1CD6E9E2610CAB2001CC139 /* Configuracao.swift */,
 			);
 			path = Componentes;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 				D1A62EA7260961BF00F317AE /* AlunoAPI.swift */,
 				D1A62EA9260969D900F317AE /* AlunoDAO.swift */,
 				D1A62EAB26096B5500F317AE /* Repositorio.swift */,
+				D1CD6EA02610D180001CC139 /* AlunoUserDefaults.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -358,6 +364,7 @@
 				A281001A1FD5C2F700E1BDF1 /* ImagePicker.swift in Sources */,
 				B911302A1FE05358002768A7 /* CalculaMediaAPI.swift in Sources */,
 				03AA17681FC843B1003CB2B8 /* HomeTableViewCell.swift in Sources */,
+				D1CD6E9F2610CAB2001CC139 /* Configuracao.swift in Sources */,
 				B9518EFC1FD9BCEB00EBAFA5 /* MenuOpcoesAlunos.swift in Sources */,
 				B939B9B81FDAC2630084A557 /* Mensagem.swift in Sources */,
 				B9D565A71FE14ECA00BDA536 /* Notificacoes.swift in Sources */,
@@ -366,6 +373,7 @@
 				D1A62EAA260969D900F317AE /* AlunoDAO.swift in Sources */,
 				03AA174E1FC84154003CB2B8 /* AppDelegate.swift in Sources */,
 				B9EA19FB1FDEBEAD00403CE0 /* Localizacao.swift in Sources */,
+				D1CD6EA12610D180001CC139 /* AlunoUserDefaults.swift in Sources */,
 				658B1AA82006456B006D944C /* AutenticacaoLocal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,12 +512,14 @@
 			baseConfigurationReference = 8B294FECF3C63B23485AE44F /* Pods-Agenda.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LF4G5DZZMF;
+				DEVELOPMENT_TEAM = VP82G3HGX6;
 				INFOPLIST_FILE = Agenda/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = apps.Agenda;
+				PRODUCT_BUNDLE_IDENTIFIER = apps.dev.Agenda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -520,12 +530,14 @@
 			baseConfigurationReference = FBBAEAF424741A1C3F5DB631 /* Pods-Agenda.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LF4G5DZZMF;
+				DEVELOPMENT_TEAM = VP82G3HGX6;
 				INFOPLIST_FILE = Agenda/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = apps.Agenda;
+				PRODUCT_BUNDLE_IDENTIFIER = apps.dev.Agenda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
